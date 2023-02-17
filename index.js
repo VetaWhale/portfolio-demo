@@ -5,15 +5,16 @@ button.addEventListener('click', function() {
     output.innerHTML = "Какой ты послушный, молодец!";
 });
 
-const elements = document.querySelector('.my-skills__item-h2');
+const elements = document.querySelectorAll('.my-skills__item-h2');
 
- elements.addEventListener('click', function() {
-    if (elements.classList.contains('close')) {
-        elements.classList.add('open');
-        elements.classList.remove('close')
-    } else {
-        elements.classList.add('close')
-        elements.classList.remove('open');
-        
+for(let element of elements) {
+    element.onclick = function() {
+        if (element.classList.contains('close')) {
+            element.classList.add('open');
+            element.classList.remove('close')
+        } else {
+            element.classList.add('close')
+            element.classList.remove('open');
+        }
     }
-})
+}
