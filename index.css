@@ -154,7 +154,7 @@ p {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url(/arrow-circle-right.svg);
+    background: url(arrow-circle-right.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 15px;
